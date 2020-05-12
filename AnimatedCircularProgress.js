@@ -30,7 +30,7 @@ export default class AnimatedCircularProgress extends Component {
       toValue: this.props.fill,
       tension,
       friction,
-      useNativeDriver: true
+      useNativeDriver: false
     }).start();
   }
 
