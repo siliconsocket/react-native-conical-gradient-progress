@@ -179,7 +179,7 @@ export default class CircularProgress extends Component {
             {this.renderCirclePaths()}
           </G>
         </Svg>
-        {children && children(fill)}
+        {children}
       </View>
     );
   }
@@ -187,7 +187,7 @@ export default class CircularProgress extends Component {
 
 CircularProgress.propTypes = {
   backgroundColor: PropTypes.string,
-  children: PropTypes.func,
+  children: PropTypes.element,
   fill: PropTypes.number.isRequired,
   rotation: PropTypes.number,
   size: PropTypes.number.isRequired,
